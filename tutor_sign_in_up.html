@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor | signup</title>
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+
+</head>
+ 
+<body class="bg-warning">
+    <h3 style="z-index:auto;">This repo is for coursera web development course
+
+        html-css and javascript
+        repo for assignment and projects in the course</h3>
+
+    <!-- logo and brand Name -->
+    <nav style="position:sticky; top: 0;" class="px-md-3 navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- logo and name -->
+            <img src="images/logo.png" class="  img-fluid navbar-brand" width="40" height="24" alt="logo">
+
+            <a class="navbar-brand text-center d-block d-md-none" href="#"><u>=hulu=</u></a>
+
+            <!--toggle button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Tutor</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Mela</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">shope</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">product</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- signup form -->
+    <div class="container-fluid mt-3 ">
+        <div class="row align-items-center ">
+            <div class="col-md-5 text-center text-md-start  mx-md-5 ms-md-5 ps-5">
+                <!-- <h1 class="display-5 text-light text-center ">You welcome</h1> -->
+
+                <div class="card bg-warning p-3 ">
+                    <h2 class="text-center text-secondary mb-3">Registration info
+                    </h2>
+                    
+                    <form action="" class="text-secondary text-start">
+                        <label for="fname">Name</label>
+                        <input class="form-control" id="fname" type="text" name="name" placeholder="Your name">
+                        <!-- <br> -->
+                        <label for="password">Password</label>
+                        <input class="form-control" id="password" type="password" name="password"
+                            placeholder="set a password">
+
+                        <br>
+                        <label for="confirm">confirm</label>
+                        <input class="form-control" id="confirm" type="password" name="confirm"
+                            placeholder="re-enter the password">
+                        <br>
+                        <label for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email"
+                            placeholder="someone@gmail.com">
+                        <br>
+
+                        <a class="btn btn-outline-success btn-lg" href="#">signup</a>
+
+                        <a class="text-secondary ps-5 ms-5 h6" href="#"> already a member -> <span
+                                class="text-primary">login</span></a>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-md-5 mt-5   d-none d-md-block ">
+                <img class="img-fluid " src="images/logo.png" alt="jo" srcset="">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- email verification form -->
+    <div class="container-fluid mt-5  ">    
+        <div class="row align-items-center ">
+            <div class="col-md-5 text-center text-md-start  mx-md-5 ms-md-5 ps-5">
+                <div class="card bg-warning p-5">
+                    <h2 class="text-center text-secondary mb-3">Email verification
+                    </h2>
+                    <form action="" class="text-success text-start">
+                        <p class="text-center"> Dear <b>someone</b> we have sent a verification code to
+                            <b>someone@gmail.com.</b>check your email and enter the code bellow
+                        </p>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-5">
+                                <label for="vcode">Verification code</label>
+                                <input class="form-control" id="vcode" type="text" name="verification"
+                                    placeholder="xx-xx-xx">
+                        
+                                </div>
+                            <div class="col-5 pt-4">
+                                <a class="btn btn-outline-success " href="#">Verify</a>
+                            </div>
+
+                            <a class="ps-5 pt-4 text-secondary h6" href="#">Didn't get the code -> <span
+                                    class="text-primary">resend </span></a>
+
+
+                    </form>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-5 mt-5   d-none d-md-block ">
+                <img class="img-fluid " src="resource/Project logo no name.png" alt="jo" srcset="">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 
+    < signup form 
+    <div class="container-fluid">
+        <div class="row align-items-center ">
+            <div class="col-md-5 text-center text-md-start  mx-md-5 ms-md-5 ps-5">
+                <h1 class="display-5 text-light text-center ">You welcome</h1>
+                <h3 class="display-5 text-center text-secondary">New user</h3>
+                <div class="card bg-warning p-5">
+
+                    <form action="" class="text-success">
+                        <label for="fname">First name</label>
+                        <input class="form-control" id="fname" type="text" name="name" placeholder="your name">
+                        <br>
+                        <label for="lname">Last name</label>
+                        <input class="form-control" id="lname" type="text" name="name" placeholder="Father name">
+                        <br>
+
+                        <label for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email"
+                            placeholder="someone@gmail.com">
+                        <br>
+
+                        <a class="btn btn-outline-success btn-lg" href="#">Contact now</a>
+
+
+                    </form>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-5 mt-5   d-none d-md-block ">
+                <img class="img-fluid " src="resource/Project logo no name.png" alt="jo" srcset="">
+
+            </div>
+        </div>
+
+    </div> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+</body>
+
+</html>

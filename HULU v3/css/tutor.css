@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(199, 206, 168);
+  background-image: url("/image/background.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+#form {
+  background-color: #dfdede;
+  margin: 10px auto;
+  padding: 40px;
+  width: 40%;
+  min-width: 300px;
+  box-shadow: rgb(0, 195, 59) 4px 00;
+}
+#form h1 {
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(57, 119, 29);
+}
+h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid green;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaa;
+}
+.invalid {
+  background-color: #fac0c0;
+}
+.tab {
+  display: none;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(0, 183, 255);
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.47;
+}
+.active {
+  opacity: 1;
+  border: rgb(0, 183, 255) 5px solid;
+}
+.finished {
+  background-color: rgb(9, 154, 211);
+  border: none;
+}

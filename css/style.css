@@ -1,0 +1,169 @@
+
+body {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
+    box-sizing: border-box !important;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#header-nav{
+    position: fixed;
+    top: 0;
+    z-index: 6 ;
+    width: 100%;
+}
+
+#navLink a:hover{
+   border-bottom: 1px solid #e5ff00;
+   /* font-size: smaller; */
+     color:green;
+    /* font-weight: bolder; */
+}   
+
+button.navbar-toggler:hover{
+    color:rgb(255, 217, 0);
+
+}
+
+button.navbar-toggler:focus{
+   color: green;
+   border-radius: 20px;
+
+} 
+#main-content{
+    color: black;
+    padding: 10%;
+
+}
+/* END OF HEADER  */
+
+
+/* PROVIDERS PROFILE */
+.providers-profile{
+    background-color: #ffffff;
+    height: 250px;
+    min-width:max-content;
+    
+    border: unset;
+    box-shadow: 0 1px 5px 1px rgb(151, 131, 131);  
+    border-radius: 0  30px 0 30px ;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    position: relative;
+  
+}
+.providers-profile:hover{
+    animation: providerHover;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+.providers-profile-picture{
+    width:80px;
+    height: 80px;
+    margin-top: -40px;
+    box-shadow: 0 1px 5px 1px rgb(151, 131, 131);  
+    border-radius: 40px;
+}
+.providers-name{
+    color: rgb(27, 157, 35);
+    text-align: end;
+    margin-right: 5%;
+    margin-top: -30px;
+    border-bottom: rgb(166, 164, 6) 2px solid;
+    margin-left: 42px;
+}
+.providers-description{
+    margin-left: 10%;
+}
+
+.make-contract{
+    color: white;
+    background-color: #0e9d3e;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    position: absolute;
+    bottom: 0;
+}
+.providers-profile >a{
+    text-decoration: unset;
+    color: rgb(48, 99, 94);
+}
+
+@keyframes providerHover {
+    from{
+        background-color: white;
+    
+    }
+    to{
+       background-color: #000000;
+       box-shadow: 0 1px 5px 1px rgb(57, 56, 56);  
+
+    }
+    
+}
+
+
+/* MAIN CONTENT  */
+.top-tutor-providers{
+    background-color: #ffffff;
+    height: 250px;
+    border: unset;
+    box-shadow: 0 1px 5px 1px rgb(151, 131, 131);  
+    border-radius: 30px  30px 30px 30px ;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    position: relative;
+}
+.top-tutor-providers >span{
+    text-decoration: unset;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 100%;
+    height: 30px;   
+    opacity: 50%;
+    border-radius: 0  0 30px 30px;
+    background-color: #bed700;
+    text-align: center;
+}
+.top-tutor-providers >span:hover{ 
+    opacity: 100%; 
+}  
+#profile-picture{
+    width:80px;
+    height: 80px;
+    margin-top: -40px;
+    box-shadow: 0 1px 5px 1px rgb(151, 131, 131);  
+    border-radius: 40px;
+}
+/* END OF MAIN CONTENT */
+
+.copyright {
+    margin-top: 50px;
+    padding-bottom: 1px;
+    text-align: center;
+    color: #8a8181;
+    background-color: #080a09;
+    
+  }
+#footer{
+    color: #f2f2f2;
+    background-color: rgb(24, 23, 23);
+  }
+/* PROVIDERS SEARCH BAR  */
+.search-bar{
+    position: -webkit-sticky;
+    position:sticky;
+    top:68px;
+    background-color: rgb(211, 211, 211);
+
+z-index: 5;
+
+}

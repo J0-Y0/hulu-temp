@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>hulu | Community test </title>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- header nav and logo -->
+        <header>
+                <nav id="header-nav" class="navbar  navbar-expand-md navbar-dark bg-dark">
+                    <div class="container-fluid px-md-4">
+                        <!-- logo and name -->
+                        <img src="../images/logo.png" class="  img-fluid navbar-brand" width="40" height="24" alt="logo">
+                        <a class="navbar-brand" href="#"><u></u></a>
+
+                        <!--toggle button-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                                class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!--navbar links -->
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul id="navLink" class="navbar-nav">
+                                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Home</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Find tutor provider</a> </li>
+
+                                <li class="nav-item"> <a class="nav-link" href="../community/community.html">Community</a> </li>
+                                
+                                <li class="nav-item"> <a class="nav-link" href="../index.html#footer">About</a> </li>
+                                
+                                <li class="nav-item"> <a class="nav-link" href="../authenticate.html">Login</a> </li>
+
+                                <!-- <li title="you have no right to access those file" class="nav-item"> <a
+                                        class="nav-link disabled" href="#" tabin  dex="-1" aria-disabled="true">Educational
+                                        documents</a> </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        </header><!--END OF HEADER--> 
+
+        <!--body of find tutor-->
+        <!--search nave bar-->
+        <div class="container-fluid    mt-5 pt-5 ">     
+            <nav class="navbar navbar-light  bg-light search-bar">
+                <div class="container-fluid ">
+                  <!-- <a class="navbar-brand">Advanced Search</a> -->
+                  <!-- <img src="../images/logo.png" class="  img-fluid navbar-brand" width="40" height="24" alt="logo"> -->
+
+                  <form class="d-flex">
+                    <div class="input-group">
+
+                        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" title="Advanced search">@</button>
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+
+                    </div>
+                    
+                    <img src="../images/logo.png" class="  img-fluid navbar-brand  d-sm-none ms-5" width="40" height="24" alt="logo">
+
+                  </form>
+                  <!-- <p class="h4 text-center text-secondary">Thanks For Choosing Us </p> -->
+                  <img src="../images/logo.png" class="  img-fluid navbar-brand d-none d-sm-flex " width="40" height="24" alt="logo">
+
+                </div>
+              </nav><!-- END OF SEARCH NAV BAR    -->
+        
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header ">
+                    <img src="../images/logo.png" class="  img-fluid navbar-brand  " width="40" height="24" alt="logo">
+
+                    <h5 class="offcanvas-title text-success" id="offcanvasWithBothOptionsLabel">Advanced Search</h5>
+                    <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-light">
+                    <form >
+                        <!-- GRADE SELECTION -->
+                        <label for="subject" class="form-label">Grade</label> 
+                        <select required class="form-select form-select-md" aria-label=".form-select-sm example">
+                            <option selected>select grade</option>
+                            <option value="1">Grade One</option>
+                            <option value="2">grade Two</option>
+                            <option value="3">grade Three</option>
+                            <option value="3">grade Four</option>
+                            <option value="3">grade Five</option>
+                            <option value="3">grade six</option>
+                            <option value="3">grade seven</option>
+                            <option value="3">grade Eight</option>
+                            <option value="3">grade Nine</option>
+                            <option value="3">grade Ten</option>
+                            <option value="3">grade Twelve</option>
+                            <option value="3"  title="you have to specify the course in subject section">Collage and university</option>
+                            <option value="3">Nursery</option>
+                            <option value="3">UKG </option>
+                            <option value="3">MKG</option>
+                            <option value="3">LKG</option>
+                        
+                        </select><br>
+                        <!-- subject TYPING FILTER -->
+                        <label for="subject" class="form-label">Subject</label> 
+                        <input required  class="form-control" list="subject-option" id="subject" placeholder="Type subject name"> 
+                        <datalist id="subject-option">
+                            <option value="Amharic"> 
+                            <option value="English">
+                            <option value="Mathematics">
+                            <option value="Biology">
+                            <option value="Chemistry">
+                            <option value="physics">
+                            <option value="Geography">
+                            <option value="History">
+                            <option value="ICT">
+                            <option value="Language">
+                            <option value="Communication">
+                            <option value="Civics">
+                            <option value="Drawing">
+                            <option value="HPE">
+                            <option value="Communication">
+                        
+                        </datalist><br>     
+                        <!-- LOCATION SELECTION -->
+                        <label for="subject"  class="form-label">Around  Your location</label> 
+                        <!-- LOCATION ACCORDION -->
+                        <div class="accordion accordion-flush">
+                          <!-- Accordion for all Known growing  city  -->
+                          <div class="accordion-item"> 
+                            <h2 class="accordion-header" id="flush-headingMaine">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMain" aria-expanded="false" aria-controls="flush-collapseMain">
+                                Search to the Nearest 
+                              </button>
+                              </h2>
+                              <div id="flush-collapseMain" class="accordion-collapse collapse" aria-labelledby="headingMaine" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">
+                                    <!-- INNER ACCORDION -->
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                          <!-- ADDIS ABABA ACCORDION   -->
+                                          <div class="accordion-item">
+                                                          <h2 class="accordion-header" id="flush-headingAddisAbaba">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                              Addiss Ababa 
+                                                            </button>
+                                                          </h2>
+                                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingAddisAbaba" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+              
+                                                              <input required  class="form-control" list="location-addiss-option" id="location-addiss" placeholder="Type your Address"> 
+                                                              <datalist id="location-addiss-option">
+                                                                  <option value="Abacoran Sefer">
+                                                                  <option value="Abado Project 13">
+                                                                  <option value="Abnet Square">
+                                                                  <option value="Adiss">
+                                                                  <option value="Adwa Dildiy Akebabi">
+                                                                  <option value="Adwa Dildiy Condominium">
+                                                                  <option value="Agusta">
+                                                                  <option value="Akaki Beseka">
+                                                                  <option value="Akaki Bota">
+                                                                  <option value="Akaki Kaliti">
+                                                                  <option value="Ambassador">
+                                                                  <option value="American Gibi">
+                                                                  <option value="Amist Kilo">
+                                                                  <option value="Ammanuel Area">
+                                                                  <option value="Arada">
+                                                                  <option value="Arat Kilo">
+                                                                  <option value="Aroge Kera">
+                                                                  <option value="Aserasement">
+                                                                  <option value="Asko Area">
+                                                                  <option value="Asko Bercheko Faberika Area">
+                                                                  <option value="Atekelet Tera">
+                                                                  <option value="Atena Tera">
+                                                                  <option value="Autobus Tera">
+                                                                  <option value="Ayat Condominium">
+                                                                  <option value="Ayat Real Estate Development">
+                                                                  <option value="Ayat Zone 2">
+                                                                  <option value="Ayat Zone 3">
+                                                                  <option value="Ayat Zone 5">
+                                                                  <option value="Ayat">
+                                                                  <option value="Ayer Tena">
+                                                                  <option value="Balderas Condominium">
+                                                                  <option value="Bantyiketu">
+                                                                  <option value="Beg Tera">
+                                                                  <option value="Beg Tera">
+                                                                  <option value="Beherawi">
+                                                                  <option value="Beklo Bet">
+                                                                  <option value="Berbere Berenda">
+                                                                  <option value="Besrat Gebriel">
+                                                                  <option value="Bias Meberat">
+                                                                  <option value="BlockLHS">
+                                                                  <option value="BlockRHS">
+                                                                  <option value="Bole Arabsa">
+                                                                  <option value="Bole Ayat">
+                                                                  <option value="Bole Lemi Industrial Park">
+                                                                  <option value="Bole Mikael">
+                                                                  <option value="bole">
+                                                                  <option value="Bomb Tera">
+                                                                  <option value="Bulgariya Sefer">
+                                                                  <option value="Ched Tera">
+                                                                  <option value="Ched Tera">
+                                                                  <option value="Chefie Condominium">
+                                                                  <option value="Chid Tera">
+                                                                  <option value="Coca">
+                                                                  <option value="Darmar">
+                                                                  <option value="District 3">
+                                                                  <option value="Doro Manekiya">
+                                                                  <option value="Doro Tera">
+                                                                  <option value="Dubai Tera">
+                                                                  <option value="EECMY Residential Area">
+                                                                  <option value="Enderase">
+                                                                  <option value="Endorro">
+                                                                  <option value="Enqulal Faberika">
+                                                                  <option value="Eri Bekentu">
+                                                                  <option value="Ferash Tera">
+                                                                  <option value="Flintstone Homes Condominium">
+                                                                  <option value="Gebre Kirstos Bete Kristian">
+                                                                  <option value="Gedam Sefer">
+                                                                  <option value="Geja Seffer">
+                                                                  <option value="Gelan Bota">
+                                                                  <option value="Gerji">
+                                                                  <option value="Gewasa">
+                                                                  <option value="Ghiliffalegn Stream">
+                                                                  <option value="Giorgis">
+                                                                  <option value="Golla Mikael">
+                                                                  <option value="Goma Kuteba">
+                                                                  <option value="Goma Tera">
+                                                                  <option value="Gotera">
+                                                                  <option value="Great Akaki">
+                                                                  <option value="Gulele Bota">
+                                                                  <option value="Gullele">
+                                                                  <option value="Gullele">
+                                                                  <option value="Habitate">
+                                                                  <option value="Habte Giorgis">
+                                                                  <option value="Hadere Sefer">
+                                                                  <option value="Haile Garment">
+                                                                  <option value="Hana">
+                                                                  <option value="Harbu Shet">
+                                                                  <option value="Irtu Bota">
+                                                                  <option value="Jackros Condominium">
+                                                                  <option value="Jemo 1">
+                                                                  <option value="Jemo 2">
+                                                                  <option value="Jemo 3">
+                                                                  <option value="Jemo Michael">
+                                                                  <option value="Jemo">
+                                                                  <option value="Jos Hansen">
+                                                                  <option value="Kara Alo">
+                                                                  <option value="Kara">
+                                                                  <option value="Kasanchis">
+                                                                  <option value="Kebena">
+                                                                  <option value="Kebena">
+                                                                  <option value="Kera">
+                                                                  <option value="Ketena Hulet">
+                                                                  <option value="Kirkos">
+                                                                  <option value="Kolfe Keranio">
+                                                                  <option value="kolfe keranio">
+                                                                  <option value="Kolfe Tiwan">
+                                                                  <option value="Korech Tera">
+                                                                  <option value="Koshim">
+                                                                  <option value="Kotebe Shet">
+                                                                  <option value="Kotebe">
+                                                                  <option value="Kotebe">
+                                                                  <option value="Koye">
+                                                                  <option value="Kurtume Stream">
+                                                                  <option value="Lafto">
+                                                                  <option value="Lancha">
+                                                                  <option value="Lebu Mebrathail">
+                                                                  <option value="Lebu">
+                                                                  <option value="Legehar">
+                                                                  <option value="Lekwuanda">
+                                                                  <option value="Lideta Gebriel Bete Kristian">
+                                                                  <option value="lideta">
+                                                                  <option value="Mechare Meda">
+                                                                  <option value="Megenagna">
+                                                                  <option value="Mekanisa Abo">
+                                                                  <option value="Mekanisa">
+                                                                  <option value="Menaheriya Kasanchis">
+                                                                  <option value="Menisa">
+                                                                  <option value="Mentaf Tera">
+                                                                  <option value="Mesalemiya">
+                                                                  <option value="Meshualekiya">
+                                                                  <option value="Meskel Flower">
+                                                                  <option value="Mesob Tera">
+                                                                  <option value="Mexico">
+                                                                  <option value="Mickey Ieland Condo Site">
+                                                                  <option value="Microlink Project">
+                                                                  <option value="Military Tera">
+                                                                  <option value="Minalesh Tera">
+                                                                  <option value="Minalesh Tera">
+                                                                  <option value="Mobil">
+                                                                  <option value="Molla Maru">
+                                                                  <option value="Natan Feleke Kibret Residence">
+                                                                  <option value="Nefro Neighborhood">
+                                                                  <option value="nifas silk lafto">
+                                                                  <option value="Noah Real Estate">
+                                                                  <option value="Olympia">
+                                                                  <option value="Piazza">
+                                                                  <option value="Posta Bet">
+                                                                  <option value="Quasmeda">
+                                                                  <option value="Ras Mekonnen Deldiy">
+                                                                  <option value="Repi Upper">
+                                                                  <option value="Repi">
+                                                                  <option value="Riche">
+                                                                  <option value="Rwanda">
+                                                                  <option value="Sar Bet">
+                                                                  <option value="Saris Abo Area">
+                                                                  <option value="Saris">
+                                                                  <option value="Satin Tera">
+                                                                  <option value="Sebara Babur">
+                                                                  <option value="Sebategna">
+                                                                  <option value="Sehan Tera">
+                                                                  <option value="Selbane">
+                                                                  <option value="Sengatera">
+                                                                  <option value="Shanta Tera">
+                                                                  <option value="Shekla Tera">
+                                                                  <option value="Shema Tera">
+                                                                  <option value="Shera Tera">
+                                                                  <option value="Shola">
+                                                                  <option value="Signal">
+                                                                  <option value="Somali Tera">
+                                                                  <option value="SOS Children's Village Addis Ababa">
+                                                                  <option value="Sost Kuter Mazoria (Total)">
+                                                                  <option value="Sunshine Real Estate">
+                                                                  <option value="Tafo Shet">
+                                                                  <option value="Taliyan Sefer">
+                                                                  <option value="Tekle Haymanot">
+                                                                  <option value="Tor Hayloch">
+                                                                  <option value="Tug Kebena">
+                                                                  <option value="Tulu Dimitu">
+                                                                  <option value="Urael">
+                                                                  <option value="Vatican">
+                                                                  <option value="Webe Berha">
+                                                                  <option value="Wello Sefer">
+                                                                  <option value="Woreda 11 Administrative Office">
+                                                                  <option value="Worik Twra">
+                                                                  <option value="YAkaki kality">
+                                                                  <option value="Yedejazmach Alula Irsha">
+                                                                  <option value="Yeka Bole Bota">
+                                                                  <option value="Yeka">
+                                                                  <option value="Yohannes">
+                                                                  <option value="Zenebework">
+                                                                  
+    
+                                                              
+                                                              </datalist>
+                                                            </div>
+                                                        </div>
+                                        </div><!--END OF ADDIS ABABA ACCORDION   -->
+                                        <!-- ADAMA ACCORDION -->
+                                        <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="flush-headingThree">
+                                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                            Adama
+                                                          </button>
+                                                        </h2>
+                                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                          <div class="accordion-body">
+                                                            <input required  class="form-control" list="location-addiss-option" id="location-addiss" placeholder="Type your Address"> 
+                                                          </div>
+                                                        </div>  
+                                        </div><!--END OF  ADAMA ACCORDION -->
+                                        <!-- BahorDar ACCORDION -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingBahorDar">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBahorDar" aria-expanded="false" aria-controls="flush-collapseBahorDar">
+                                                BahorDar 
+                                              </button>
+                                            </h2>
+                                            <div id="flush-collapseBahorDar" class="accordion-collapse collapse" aria-labelledby="flush-headingBahorDar" data-bs-parent="#accordionFlushExample">
+                                              <div class="accordion-body">
+                                                <input required  class="form-control" list="location-addiss-option" id="location-addiss" placeholder="Type your Address"> 
+                                              </div>
+                                            </div>  
+                                        </div><!--END OF  BahorDar ACCORDION -->
+                                    </div><!--END OF INNER ACCORDION -->
+                                  </div><!--END OF OUTER ACCORDIONS BODY-->
+                              </div>
+                          </div>
+                        </div><!-- END OF LOCATION Accordion  -->
+                        <br>
+                      
+                        <!-- LIST PRICE -->
+                        <label for="list-price" class="form-label">price below </label> 
+                        <input type="number"  class="form-control"  id="list-price" placeholder="price below in birr "> <br>
+                
+                        <!-- TUTOR PROVIDERS GENDER -->
+                        <label for="both" class="form-label">Tutor provider should be</label> 
+                        <div class="form-check ms-2">
+                            <input class="form-check-input" type="radio" name="gender" value="male" id="male" ><label class="form-check-label" for="male" >Male</label><br>
+                            <input class="form-check-input" type="radio" name="gender" value="female" id="female" ><label class="form-check-label" for="female" >Female</label><br>
+                            <input checked class="form-check-input " type="radio" name="gender" value="both" id="both" ><label class="form-check-label" for="both" >Gender is not my concern</label><br>
+                        </div><br>
+                        <button class="form-control btn btn-outline-success "  type="submit" res>Search</button>
+                    </form>
+                </div>
+                </div>
+            <div class="advanced-Search col-6  col-sm-4 col-md-3  col-xl-2 bg-light  pb-5 d-none d-sm-block">
+
+                <form >
+                    <!-- GRADE SELECTION -->
+                    <label for="subject" class="form-label">Grade</label> 
+                    <select required class="form-select form-select-md" aria-label=".form-select-sm example">
+                        <option selected>select grade</option>
+                        <option value="1">Grade One</option>
+                        <option value="2">grade Two</option>
+                        <option value="3">grade Three</option>
+                        <option value="3">grade Four</option>
+                        <option value="3">grade Five</option>
+                        <option value="3">grade six</option>
+                        <option value="3">grade seven</option>
+                        <option value="3">grade Eight</option>
+                        <option value="3">grade Nine</option>
+                        <option value="3">grade Ten</option>
+                        <option value="3">grade Twelve</option>
+                        <option value="3"  title="you have to specify the course in subject section">Collage and university</option>
+                        <option value="3">Nursery</option>
+                        <option value="3">UKG </option>
+                        <option value="3">MKG</option>
+                        <option value="3">LKG</option>
+                    
+                    </select><br>
+                    <!-- subject TYPING FILTER -->
+                    <label for="subject" class="form-label">Subject</label> 
+                    <input required  class="form-control" list="subject-option" id="subject" placeholder="Type subject name"> 
+                    <datalist id="subject-option">
+                        <option value="Amharic"> 
+                        <option value="English">
+                        <option value="Mathematics">
+                        <option value="Biology">
+                        <option value="Chemistry">
+                        <option value="physics">
+                        <option value="Geography">
+                        <option value="History">
+                        <option value="ICT">
+                        <option value="Language">
+                        <option value="Communication">
+                        <option value="Civics">
+                        <option value="Drawing">
+                        <option value="HPE">
+                        <option value="Communication">
+                    
+                    </datalist><br>     
+                    <!-- LOCATION SELECTION -->
+                    <label for="subject"  class="form-label">Around  Your location</label> 
+                    <!-- LOCATION ACCORDION -->
+                    <div class="accordion accordion-flush">
+                      <!-- Accordion for all Known growing  city  -->
+                      <div class="accordion-item"> 
+                        <h2 class="accordion-header" id="flush-headingMaine">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMain" aria-expanded="false" aria-controls="flush-collapseMain">
+                            Search to the Nearest 
+                          </button>
+                          </h2>
+                          <div id="flush-collapseMain" class="accordion-collapse collapse" aria-labelledby="headingMaine" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <!-- INNER ACCORDION -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                      <!-- ADDIS ABABA ACCORDION   -->
+                                      <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="flush-headingAddisAbaba">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                          Addiss Ababa 
+                                                        </button>
+                                                      </h2>
+                                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingAddisAbaba" data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">
+          
+                                                          <input required  class="form-control" list="location-addiss-option" id="location-addiss" placeholder="Type your Address"> 
+                                                          <datalist id="location-addiss-option">
+                                                              <option value="Abacoran Sefer">
+                                                              <option value="Abado Project 13">
+                                                              <option value="Abnet Square">
+                                                              <option value="Adiss">
+                                                              <option value="Adwa Dildiy Akebabi">
+                                                              <option value="Adwa Dildiy Condominium">
+                                                              <option value="Agusta">
+                                                              <option value="Akaki Beseka">
+                                                              <option value="Akaki Bota">
+                                                              <option value="Akaki Kaliti">
+                                                              <option value="Ambassador">
+                                                              <option value="American Gibi">
+                                                              <option value="Amist Kilo">
+                                                              <option value="Ammanuel Area">
+                                                              <option value="Arada">
+                                                              <option value="Arat Kilo">
+                                                              <option value="Aroge Kera">
+                                                              <option value="Aserasement">
+                                                              <option value="Asko Area">
+                                                              <option value="Asko Bercheko Faberika Area">
+                                                              <option value="Atekelet Tera">
+                                                              <option value="Atena Tera">
+                                                              <option value="Autobus Tera">
+                                                              <option value="Ayat Condominium">
+                                                              <option value="Ayat Real Estate Development">
+                                                              <option value="Ayat Zone 2">
+                                                              <option value="Ayat Zone 3">
+                                                              <option value="Ayat Zone 5">
+                                                              <option value="Ayat">
+                                                              <option value="Ayer Tena">
+                                                              <option value="Balderas Condominium">
+                                                              <option value="Bantyiketu">
+                                                              <option value="Beg Tera">
+                                                              <option value="Beg Tera">
+                                                              <option value="Beherawi">
+                                                              <option value="Beklo Bet">
+                                                              <option value="Berbere Berenda">
+                                                              <option value="Besrat Gebriel">
+                                                              <option value="Bias Meberat">
+                                                              <option value="BlockLHS">
+                                                              <option value="BlockRHS">
+                                                              <option value="Bole Arabsa">
+                                                              <option value="Bole Ayat">
+                                                              <option value="Bole Lemi Industrial Park">
+                                                              <option value="Bole Mikael">
+                                                              <option value="bole">
+                                                              <option value="Bomb Tera">
+                                                              <option value="Bulgariya Sefer">
+                                                              <option value="Ched Tera">
+                                                              <option value="Ched Tera">
+                                                              <option value="Chefie Condominium">
+                                                              <option value="Chid Tera">
+                                                              <option value="Coca">
+                                                              <option value="Darmar">
+                                                              <option value="District 3">
+                                                              <option value="Doro Manekiya">
+                                                              <option value="Doro Tera">
+                                                              <option value="Dubai Tera">
+                                                              <option value="EECMY Residential Area">
+                                                              <option value="Enderase">
+                                                              <option value="Endorro">
+                                                              <option value="Enqulal Faberika">
+                                                              <option value="Eri Bekentu">
+                                                              <option value="Ferash Tera">
+                                                              <option value="Flintstone Homes Condominium">
+                                                              <option value="Gebre Kirstos Bete Kristian">
+                                                              <option value="Gedam Sefer">
+                                                              <option value="Geja Seffer">
+                                                              <option value="Gelan Bota">
+                                                              <option value="Gerji">
+                                                              <option value="Gewasa">
+                                                              <option value="Ghiliffalegn Stream">
+                                                              <option value="Giorgis">
+                                                              <option value="Golla Mikael">
+                                                              <option value="Goma Kuteba">
+                                                              <option value="Goma Tera">
+                                                              <option value="Gotera">
+                                                              <option value="Great Akaki">
+                                                              <option value="Gulele Bota">
+                                                              <option value="Gullele">
+                                                              <option value="Gullele">
+                                                              <option value="Habitate">
+                                                              <option value="Habte Giorgis">
+                                                              <option value="Hadere Sefer">
+                                                              <option value="Haile Garment">
+                                                              <option value="Hana">
+                                                              <option value="Harbu Shet">
+                                                              <option value="Irtu Bota">
+                                                              <option value="Jackros Condominium">
+                                                              <option value="Jemo 1">
+                                                              <option value="Jemo 2">
+                                                              <option value="Jemo 3">
+                                                              <option value="Jemo Michael">
+                                                              <option value="Jemo">
+                                                              <option value="Jos Hansen">
+                                                              <option value="Kara Alo">
+                                                              <option value="Kara">
+                                                              <option value="Kasanchis">
+                                                              <option value="Kebena">
+                                                              <option value="Kebena">
+                                                              <option value="Kera">
+                                                              <option value="Ketena Hulet">
+                                                              <option value="Kirkos">
+                                                              <option value="Kolfe Keranio">
+                                                              <option value="kolfe keranio">
+                                                              <option value="Kolfe Tiwan">
+                                                              <option value="Korech Tera">
+                                                              <option value="Koshim">
+                                                              <option value="Kotebe Shet">
+                                                              <option value="Kotebe">
+                                                              <option value="Kotebe">
+                                                              <option value="Koye">
+                                                              <option value="Kurtume Stream">
+                                                              <option value="Lafto">
+                                                              <option value="Lancha">
+                                                              <option value="Lebu Mebrathail">
+                                                              <option value="Lebu">
+                                                              <option value="Legehar">
+                                                              <option value="Lekwuanda">
+                                                              <option value="Lideta Gebriel Bete Kristian">
+                                                              <option value="lideta">
+                                                              <option value="Mechare Meda">
+                                                              <option value="Megenagna">
+                                                              <option value="Mekanisa Abo">
+                                                              <option value="Mekanisa">
+                                                              <option value="Menaheriya Kasanchis">
+                                                              <option value="Menisa">
+                                                              <option value="Mentaf Tera">
+                                                              <option value="Mesalemiya">
+                                                              <option value="Meshualekiya">
+                                                              <option value="Meskel Flower">
+                                                              <option value="Mesob Tera">
+                                                              <option value="Mexico">
+                                                              <option value="Mickey Ieland Condo Site">
+                                                              <option value="Microlink Project">
+                                                              <option value="Military Tera">
+                                                              <option value="Minalesh Tera">
+                                                              <option value="Minalesh Tera">
+                                                              <option value="Mobil">
+                                                              <option value="Molla Maru">
+                                                              <option value="Natan Feleke Kibret Residence">
+                                                              <option value="Nefro Neighborhood">
+                                                              <option value="nifas silk lafto">
+                                                              <option value="Noah Real Estate">
+                                                              <option value="Olympia">
+                                                              <option value="Piazza">
+                                                              <option value="Posta Bet">
+                                                              <option value="Quasmeda">
+                                                              <option value="Ras Mekonnen Deldiy">
+                                                              <option value="Repi Upper">
+                                                              <option value="Repi">
+                                                              <option value="Riche">
+                                                              <option value="Rwanda">
+                                                              <option value="Sar Bet">
+                                                              <option value="Saris Abo Area">
+                                                              <option value="Saris">
+                                                              <option value="Satin Tera">
+                                                              <option value="Sebara Babur">
+                                                              <option value="Sebategna">
+                                                              <option value="Sehan Tera">
+                                                              <option value="Selbane">
+                                                              <option value="Sengatera">
+                                                              <option value="Shanta Tera">
+                                                              <option value="Shekla Tera">
+                                                              <option value="Shema Tera">
+                                                              <option value="Shera Tera">
+                                                              <option value="Shola">
+                                                              <option value="Signal">
+                                                              <option value="Somali Tera">
+                                                              <option value="SOS Children's Village Addis Ababa">
+                                                              <option value="Sost Kuter Mazoria (Total)">
+                                                              <option value="Sunshine Real Estate">
+                                                              <option value="Tafo Shet">
+                                                              <option value="Taliyan Sefer">
+                                                              <option value="Tekle Haymanot">
+                                                              <option value="Tor Hayloch">
+                                                              <option value="Tug Kebena">
+                                                              <option value="Tulu Dimitu">
+                                                              <option value="Urael">
+                                                              <option value="Vatican">
+                                                              <option value="Webe Berha">
+                                                              <option value="Wello Sefer">
+                                                              <option value="Woreda 11 Administrative Office">
+                                                              <option value="Worik Twra">
+                                                              <option value="YAkaki kality">
+                                                              <option value="Yedejazmach Alula Irsha">
+                                                              <option value="Yeka Bole Bota">
+                                                              <option value="Yeka">
+                                                              <option value="Yohannes">
+                                                              <option value="Zenebework">
+                                                              
+
+                                                          
+                                                          </datalist>
+                                                        </div>
+                                                    </div>
+                                    </div><!--END OF ADDIS ABABA ACCORDION   -->
+                                    <!-- ADAMA ACCORDION -->
+                                    <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-headingThree">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                        Adama
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">
+                                                        <input required  class="form-control" list="location-addiss-option" id="location-addiss" placeholder="Type your Address"> 
+                                                      </div>
+                                                    </div>  
+                                    </div><!--END OF  ADAMA ACCORDION -->
+                                    <!-- BahorDar ACCORDION -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingBahorDar">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBahorDar" aria-expanded="false" aria-controls="flush-collapseBahorDar">
+                                            BahorDar 
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseBahorDar" class="accordion-collapse collapse" aria-labelledby="flush-headingBahorDar" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                            <input required  class="form-control" list="location-addiss-option" id="location-addiss" placeholder="Type your Address"> 
+                                          </div>
+                                        </div>  
+                                    </div><!--END OF  BahorDar ACCORDION -->
+                                </div><!--END OF INNER ACCORDION -->
+                              </div><!--END OF OUTER ACCORDIONS BODY-->
+                          </div>
+                      </div>
+                    </div><!-- END OF LOCATION Accordion  -->
+                    <br>
+                  
+                    <!-- LIST PRICE -->
+                    <label for="list-price" class="form-label">price below </label> 
+                    <input type="number"  class="form-control"  id="list-price" placeholder="price below in birr "> <br>
+            
+                    <!-- TUTOR PROVIDERS GENDER -->
+                    <label for="both" class="form-label">Tutor provider should be</label> 
+                    <div class="form-check ms-2">
+                        <input class="form-check-input" type="radio" name="gender" value="male" id="male" ><label class="form-check-label" for="male" >Male</label><br>
+                        <input class="form-check-input" type="radio" name="gender" value="female" id="female" ><label class="form-check-label" for="female" >Female</label><br>
+                        <input checked class="form-check-input " type="radio" name="gender" value="both" id="both" ><label class="form-check-label" for="both" >Gender is not my concern</label><br>
+                    </div><br>
+                    <button class="form-control btn btn-outline-success "  type="submit" res>Search</button>
+                </form>
+               
+                
+            </div>
+            <div class="col-12 col-sm-8 col-md-9"> 
+                <div class="row">
+                        <div class="col-xl-4 col-sm-6 col-xs-12">
+                      
+                          <div class="providers-profile">
+                              <a href="#">
+                                  <!-- profile picture -->
+                                  <img src="../images/jo.jpg" class="providers-profile-picture img-fluid  "   alt="profile picture">
+                                  <p class="h4 providers-name ">yosef Emyayu</p>    
+                                  <div class="providers-description">
+                                  <div class="row" >
+                                          <div class="col-6">
+                                          <p class="text-success my-1 "> Providing course</p>
+                                              <ul>
+                                                  <li>Maths </li>
+                                                  <li>physics</li>
+                                                  <li>chemistry </li>
+                                                  <li>Biology </li>
+                                              </ul> 
+                                          </div>
+                                          <div class="col-6">
+                                              <p class="text-success my-1 "> working Area</p>
+                                              <ul>
+                                                  <li>Saris </li>
+                                                  <li>saris Abo </li>
+                                                  <li>Hana </li>
+                                                  <li>Tulu dim 2</li>
+                                              </ul>
+                      
+                                          </div>
+              
+                                  </div>
+                                  
+                                  </div>
+                                  <div class="make-contract" >Make a Contract</div>
+                          </a> 
+                      </div>
+                  </div>  
+                        <div class="col-xl-4 col-sm-6 col-xs-12">
+                            
+                          <div class="providers-profile">
+                              <a href="#">
+                                  <!-- profile picture -->
+                                  <img src="../images/jo.jpg" class="providers-profile-picture img-fluid  "   alt="profile picture">
+                                  <p class="h4 providers-name ">yosef Emyayu</p>    
+                                  <div class="providers-description">
+                                  <div class="row" >
+                                          <div class="col-6">
+                                          <p class="text-success my-1 "> Providing course</p>
+                                              <ul>
+                                                  <li>Maths </li>
+                                                  <li>physics</li>
+                                                  <li>chemistry </li>
+                                                  <li>Biology </li>
+                                              </ul> 
+                                          </div>
+                                          <div class="col-6">
+                                              <p class="text-success my-1 "> working Area</p>
+                                              <ul>
+                                                  <li>Saris </li>
+                                                  <li>saris Abo </li>
+                                                  <li>Hana </li>
+                                                  <li>Tulu dim 2</li>
+                                              </ul>
+                      
+                                          </div>
+              
+                                  </div>
+                                  
+                                  </div>
+                                  <div class="make-contract" >Make a Contract</div>
+                          </a> 
+                      </div>
+                  </div> 
+                      
+                      <div class="col-xl-4 col-sm-6 col-xs-12">
+                
+                        <div class="providers-profile">
+                            <a href="#">
+                                <!-- profile picture -->
+                                <img src="../images/jo.jpg" class="providers-profile-picture img-fluid  "   alt="profile picture">
+                                <p class="h4 providers-name ">yosef Emyayu</p>    
+                                <div class="providers-description">
+                                <div class="row" >
+                                        <div class="col-6">
+                                        <p class="text-success my-1 "> Providing course</p>
+                                            <ul>
+                                                <li>Maths </li>
+                                                <li>physics</li>
+                                                <li>chemistry </li>
+                                                <li>Biology </li>
+                                            </ul> 
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-success my-1 "> working Area</p>
+                                            <ul>
+                                                <li>Saris </li>
+                                                <li>saris Abo </li>
+                                                <li>Hana </li>
+                                                <li>Tulu dim 2</li>
+                                            </ul>
+                    
+                                        </div>
+            
+                                </div>
+                                
+                                </div>
+                                <div class="make-contract" >Make a Contract</div>
+                         </a> 
+                    </div>
+                </div> 
+                <div class="col-xl-4 col-sm-6 col-xs-12">
+                
+                  <div class="providers-profile">
+                      <a href="#">
+                          <!-- profile picture -->
+                          <img src="../images/jo.jpg" class="providers-profile-picture img-fluid  "   alt="profile picture">
+                          <p class="h4 providers-name ">yosef Emyayu</p>    
+                          <div class="providers-description">
+                          <div class="row" >
+                                  <div class="col-6">
+                                  <p class="text-success my-1 "> Providing course</p>
+                                      <ul>
+                                          <li>Maths </li>
+                                          <li>physics</li>
+                                          <li>chemistry </li>
+                                          <li>Biology </li>
+                                      </ul> 
+                                  </div>
+                                  <div class="col-6">
+                                      <p class="text-success my-1 "> working Area</p>
+                                      <ul>
+                                          <li>Saris </li>
+                                          <li>saris Abo </li>
+                                          <li>Hana </li>
+                                          <li>Tulu dim 2</li>
+                                      </ul>
+              
+                                  </div>
+      
+                          </div>
+                          
+                          </div>
+                          <div class="make-contract" >Make a Contract</div>
+                   </a> 
+              </div>
+          </div>  
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>  
+
+    </body>       
+</html>
